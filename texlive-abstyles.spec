@@ -1,3 +1,9 @@
+# revision 15878
+# category Package
+# catalog-ctan /biblio/bibtex/contrib/abstyles
+# catalog-date 2008-11-26 23:58:56 +0100
+# catalog-license other-free
+# catalog-version undef
 Name:		texlive-abstyles
 Version:	20081126
 Release:	1
@@ -56,6 +62,7 @@ nowadays in its adaptation for working with Babel.
 %doc %{_texmfdistdir}/doc/bibtex/abstyles/btxabst.doc
 %doc %{_texmfdistdir}/doc/bibtex/abstyles/docmac.doc
 %doc %{_texmfdistdir}/doc/bibtex/abstyles/docmac.tex
+%doc %{_tlpkgobjdir}/*.tlpobj
 
 #-----------------------------------------------------------------------
 %prep
@@ -66,3 +73,5 @@ nowadays in its adaptation for working with Babel.
 %install
 mkdir -p %{buildroot}%{_texmfdistdir}
 cp -fpar bibtex tex doc %{buildroot}%{_texmfdistdir}
+mkdir -p %{buildroot}%{_tlpkgobjdir}
+cp -fpa tlpkg/tlpobj/*.tlpobj %{buildroot}%{_tlpkgobjdir}

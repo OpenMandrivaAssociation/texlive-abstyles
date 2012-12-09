@@ -63,3 +63,18 @@ nowadays in its adaptation for working with Babel.
 %install
 mkdir -p %{buildroot}%{_texmfdistdir}
 cp -fpar bibtex tex doc %{buildroot}%{_texmfdistdir}
+
+
+%changelog
+* Tue Jan 03 2012 Paulo Andrade <pcpa@mandriva.com.br> 20081126-2
++ Revision: 749052
+- Rebuild to reduce used resources
+
+* Sat Nov 05 2011 Paulo Andrade <pcpa@mandriva.com.br> 20081126-1
++ Revision: 717785
+- texlive-abstyles
+- texlive-abstyles
+- texlive-abstyles
+- texlive-abstyles
+- texlive-abstyles
+

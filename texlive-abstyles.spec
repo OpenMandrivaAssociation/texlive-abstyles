@@ -6,7 +6,7 @@
 # catalog-version undef
 Name:		texlive-abstyles
 Version:	20081126
-Release:	5
+Release:	6
 Summary:	Adaptable BibTeX styles
 Group:		Publishing
 URL:		http://www.ctan.org/tex-archive/biblio/bibtex/contrib/abstyles

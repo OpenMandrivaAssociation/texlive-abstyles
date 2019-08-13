@@ -1,9 +1,3 @@
-# revision 15878
-# category Package
-# catalog-ctan /biblio/bibtex/contrib/abstyles
-# catalog-date 2008-11-26 23:58:56 +0100
-# catalog-license other-free
-# catalog-version undef
 Name:		texlive-abstyles
 Version:	20190228
 Release:	1
@@ -34,25 +28,10 @@ nowadays in its adaptation for working with Babel.
 
 #-----------------------------------------------------------------------
 %files
-%{_texmfdistdir}/bibtex/bib/abstyles/acompat.bib
-%{_texmfdistdir}/bibtex/bib/abstyles/jourabbr.bib
-%{_texmfdistdir}/bibtex/bib/abstyles/jourfull.bib
-%{_texmfdistdir}/bibtex/bst/abstyles/aabbrv.bst
-%{_texmfdistdir}/bibtex/bst/abstyles/aalpha.bst
-%{_texmfdistdir}/bibtex/bst/abstyles/anotit.bst
-%{_texmfdistdir}/bibtex/bst/abstyles/aplain.bst
-%{_texmfdistdir}/bibtex/bst/abstyles/aunsnot.bst
-%{_texmfdistdir}/bibtex/bst/abstyles/aunsrt.bst
-%{_texmfdistdir}/tex/generic/abstyles/apreambl.tex
-%doc %{_texmfdistdir}/doc/bibtex/abstyles/README
-%doc %{_texmfdistdir}/doc/bibtex/abstyles/a4c.sty
-%doc %{_texmfdistdir}/doc/bibtex/abstyles/a4c.tex
-%doc %{_texmfdistdir}/doc/bibtex/abstyles/abstdok.pdf
-%doc %{_texmfdistdir}/doc/bibtex/abstyles/abstdok.tex
-%doc %{_texmfdistdir}/doc/bibtex/abstyles/apreambl.doc
-%doc %{_texmfdistdir}/doc/bibtex/abstyles/btxabst.doc
-%doc %{_texmfdistdir}/doc/bibtex/abstyles/docmac.doc
-%doc %{_texmfdistdir}/doc/bibtex/abstyles/docmac.tex
+%{_texmfdistdir}/bibtex/bib/abstyles
+%{_texmfdistdir}/bibtex/bst/abstyles
+%{_texmfdistdir}/tex/generic/abstyles
+%doc %{_texmfdistdir}/doc/bibtex/abstyles
 
 #-----------------------------------------------------------------------
 %prep
@@ -63,18 +42,4 @@ nowadays in its adaptation for working with Babel.
 %install
 mkdir -p %{buildroot}%{_texmfdistdir}
 cp -fpar bibtex tex doc %{buildroot}%{_texmfdistdir}
-
-
-%changelog
-* Tue Jan 03 2012 Paulo Andrade <pcpa@mandriva.com.br> 20081126-2
-+ Revision: 749052
-- Rebuild to reduce used resources
-
-* Sat Nov 05 2011 Paulo Andrade <pcpa@mandriva.com.br> 20081126-1
-+ Revision: 717785
-- texlive-abstyles
-- texlive-abstyles
-- texlive-abstyles
-- texlive-abstyles
-- texlive-abstyles
 
